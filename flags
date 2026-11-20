@@ -1,0 +1,43 @@
+# Your build's launch flags. Change a value, add a line or delete one;
+# okc serve check and submit launch your build with this file as it is.
+
+--tp-size 8
+--ep-size 8
+--moe-runner-backend marlin
+--mem-fraction-static 0.85
+--speculative-algorithm DFLASH
+--speculative-num-draft-tokens 8
+--speculative-draft-attention-backend fa4
+--mm-feature-transport cpu
+--enable-hierarchical-cache
+--hicache-size 160
+--chunked-prefill-size 16384
+--swa-full-tokens-ratio 0.4413
+--random-seed 1234
+
+# Always set, and can't be changed:
+# --model-path meta-models/Muse-Spark-Open-816B-A42B-NVFP4
+# --speculative-draft-model-path RadixArk/Muse-Spark-Open-DFlash2 --quantization modelopt_fp4
+# --context-length 131072 --enable-cache-report --incremental-streaming-output
+# --max-running-requests 32 --cuda-graph-max-bs-decode 32
+#
+# Can't be added (okc refuses these before a run starts, so they don't use one):
+# --allow-auto-truncate, --checkpoint-engine-*, --config, --crash-dump-folder,
+# --cuda-graph-bs-decode, --cuda-graph-config, --custom-weight-loader, --debug-tensor-dump-*,
+# --decoupled-spec-*endpoint*, --decrypted-config-file, --decrypted-draft-config-file,
+# --deepep-dispatcher-output-dtype, --disaggregation-*, --dist-init-addr, --dtype,
+# --enable-quant-communications, --enable-tf32-matmul, --enable-w4a4-mxfp4-megamoe,
+# --encoder-*urls, --export-metrics-*, --*external-linker*, --file-storage-path,
+# --flashinfer-mxfp4-moe-precision, --*flexkv*, --forward-hooks, --hicache-storage-*, --host,
+# --json-model-override-args, --kt-*, --kv-cache-dtype, --kv-events*, --*lmcache*,
+# --load-format, --load-publish-endpoint, --log-requests*, --*lora*, --model-impl,
+# --model-loader-extra-config, --modelexpress-config, --modelopt-*, --nccl-init-addr, --nnodes,
+# --node-rank, --otlp-*, --port, --preferred-sampling-params, --prefill-kv-cache-dequant-dtype,
+# --quantization*, --quantization-param-path, --quantize-and-serve, --remote-instance-*,
+# --revision, --rl-quant-profile, --sampling-defaults, --skip-tokenizer-init, --spec-trace-dir,
+# --speculative-accept-threshold-*, --speculative-draft-kv-cache-dtype,
+# --speculative-draft-load-format, --speculative-draft-model-quantization,
+# --speculative-draft-model-revision, --speculative-dspark-*-path,
+# --speculative-enable-w4a4-mxfp4-megamoe, --speculative-ngram-external-corpus-path,
+# --speculative-token-map, --speculative-use-rejection-sampling, --tokenizer-path,
+# --watermark-*, --weight-cache-*

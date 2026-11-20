@@ -1,0 +1,33 @@
+{
+  "cublaslt_version": 130101,
+  "shapes": [
+    {"n": 4096, "k": 8192, "out": "bf16", "entries": [
+      {"m": 8, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 9, "algo": 66, "tile": 487, "splitk": 4, "reduction": 2, "swizzle": 0, "custom": 1, "stages": 35, "inner": 0, "cluster": 4, "workspace": 589840, "sm_count": 0},
+      {"m": 16, "algo": 66, "tile": 312, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 1, "stages": 35, "inner": 0, "cluster": 3, "workspace": 0, "sm_count": 0},
+      {"m": 32, "algo": 66, "tile": 16, "splitk": 2, "reduction": 2, "swizzle": 0, "custom": 1, "stages": 35, "inner": 0, "cluster": 4, "workspace": 1048592, "sm_count": 0},
+      {"m": 40, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 64, "algo": 66, "tile": 134, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 35, "inner": 0, "cluster": 4, "workspace": 0, "sm_count": 0},
+      {"m": 104, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 128, "algo": 66, "tile": 27, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 2, "stages": 35, "inner": 0, "cluster": 5, "workspace": 0, "sm_count": 0}
+    ]},
+    {"n": 512, "k": 8192, "out": "fp32", "entries": [
+      {"m": 8, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 9, "algo": 66, "tile": 394, "splitk": 12, "reduction": 2, "swizzle": 0, "custom": 1, "stages": 35, "inner": 0, "cluster": 4, "workspace": 221200, "sm_count": 64},
+      {"m": 16, "algo": 66, "tile": 394, "splitk": 8, "reduction": 2, "swizzle": 0, "custom": 1, "stages": 35, "inner": 0, "cluster": 4, "workspace": 262160, "sm_count": 32},
+      {"m": 32, "algo": 66, "tile": 16, "splitk": 12, "reduction": 2, "swizzle": 0, "custom": 1, "stages": 35, "inner": 0, "cluster": 4, "workspace": 786448, "sm_count": 0},
+      {"m": 40, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 64, "algo": 66, "tile": 164, "splitk": 8, "reduction": 2, "swizzle": 0, "custom": 0, "stages": 35, "inner": 0, "cluster": 4, "workspace": 1048592, "sm_count": 32},
+      {"m": 104, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 128, "algo": 66, "tile": 17, "splitk": 12, "reduction": 2, "swizzle": 0, "custom": 0, "stages": 35, "inner": 0, "cluster": 4, "workspace": 3145748, "sm_count": 32}
+    ]},
+    {"n": 8192, "k": 1024, "out": "bf16", "entries": [
+      {"m": 4095, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 4096, "algo": 66, "tile": 184, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 2, "stages": 35, "inner": 0, "cluster": 5, "workspace": 4, "sm_count": 0},
+      {"m": 8191, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 8192, "algo": 66, "tile": 197, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 2, "stages": 35, "inner": 0, "cluster": 5, "workspace": 4, "sm_count": 0},
+      {"m": 16383, "algo": -1, "tile": 0, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 0, "stages": 0, "inner": 0, "cluster": 0},
+      {"m": 16384, "algo": 66, "tile": 201, "splitk": 1, "reduction": 0, "swizzle": 0, "custom": 2, "stages": 35, "inner": 0, "cluster": 5, "workspace": 4, "sm_count": 0}
+    ]}
+  ]
+}
